@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!-- ========== All Css Link Here ===== -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/new.css">
+    <!-- ===== responsive css  -->
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+    <!-- ========== Header Area Start Here ==========  -->
+    <!-- Top bar -->
+    <div class="top-bar">
+        <img src="images/icons/delivery_truck_speed.svg" alt="icons"> 2000 TL üzeri alışverişlerde ücretsiz kargo
+        fırsatı!
+    </div>
+
+    <!-- Desktop Header -->
+    <div class="desktop-header container-fluid pt-2 px-5">
+        <div class="row align-items-center">
+            <div class="col-auto">
+                <a href="#" class="d-grid d_menu"><img src="images/icons/menu.svg" alt="icons"> Menü</a>
+            </div>
+            <div class="col-auto logo">
+                <!-- ===== Site Logo here  -->
+                <a href="#"><img class="web_page_logo" src="images/logo.png" alt="logo"></a>
+            </div>
+            <div class="col search-box">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Ürün veya marka arayın...">
+                    <button class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </div>
+            </div>
+            <div class="col-auto d-flex gap-3 ms-5 header_menu_icons">
+                <a href="#" class="nav-icon">
+                    <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+                    <small>S.S.S.</small>
+                </a>
+                <a href="#" class="nav-icon">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <small>Bize Ulaşın</small>
+                </a>
+
+                <div class="nav-icon-wrapper position-relative">
+                    <a href="#" class="nav-icon">
+                        <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                        <small>Hesabım</small>
+                    </a>
+                    <div class="account_hover_manu position-absolute">
+                        <div class="hover_menu_arrow_up"></div>
+                        <a href="#">Üye Ol / Giriş Yap</a>
+                        <p class="mt-2">Hesabınız yok mu? <a href="#">Kayıt olun</a></p>
+                    </div>
+                </div>
+
+                <a href="#" class="nav-icon">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    <small>Sepetim</small>
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <div class="desktop_bottom_menu">
+        <nav class="navbar navbar-expand-lg pt-0">
+            <div class="container-fluid pb-2 px-5">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <i class="fa fa-times manu_close" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></i>
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Kategoriler
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Menu One</a></li>
+                                <li><a class="dropdown-item" href="#">Menu Two</a></li>
+                                <li><a class="dropdown-item" href="#">Menu Three</a></li>
+                                <li><a class="dropdown-item" href="#">Menu Four</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Markalar
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Menu One</a></li>
+                                <li><a class="dropdown-item" href="#">Menu Two</a></li>
+                                <li><a class="dropdown-item" href="#">Menu Three</a></li>
+                                <li><a class="dropdown-item" href="#">Menu Four</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Kampanyalar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">İndirimli Ürünler</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Çok Satanlar</a>
+                        </li>
+                        <li class="nav-item offer_menu position-relative">
+                            <a class="nav-link" href="#">Outlet</a>
+                            <img src="images/icons/present.svg" alt="icons">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Mobile Header -->
+    <div class="mobile-header">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+        <div class="logo mobile_logo">
+            <!-- ===== Mobile Logo  -->
+            <img src="images/mobile_logo.png" alt="logo">
+        </div>
+        <div class="nav-icon-wrapper mobile_account position-relative" id="mobileAccount">
+            <a href="#" class="nav-icon">
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                <small>Hesabım</small>
+            </a>
+            <div class="account_hover_manu position-absolute">
+                <div class="hover_menu_arrow_up"></div>
+                <a href="#">Üye Ol / Giriş Yap</a>
+                <p class="mt-2">Hesabınız yok mu? <a href="#">Kayıt olun</a></p>
+            </div>
+        </div>
+
+    </div>
+    <div class="mobile-header p-2">
+        <div class="search-box w-100">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Ürün veya marka arayın...">
+                <button class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </div>
+        </div>
+    </div>
+    <!-- ========== Header Area End Here ==========  -->
+
+    <!-- ========== View cart Area Start Here ==========  -->
+     <style>
+        #view_cart_area .container-fluid{
+            padding-left: 2%;
+            padding-right: 2%;
+        }
+     </style>
+    <section id="view_cart_area">
+        <div class="cart_title text-center">
+            <h3>Sepetim</h3>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="cart_card_box">
+                        <!-- ====== Items Start   -->
+                        <div class="cart_card_items">
+                            <div class="row">
+                                <div class="col-lg-3 col-6 col-md-3">
+                                    <div class="cart_img position-relative">
+                                        <img src="images/cart/product_01.png" alt="img">
+                                        <i class="fa fa-heart-o heart-toggle" aria-hidden="true"></i>
+                                        <script>
+                                            document.querySelectorAll('.heart-toggle').forEach(function (icon) {
+                                                icon.addEventListener('click', function () {
+                                                    this.classList.toggle('fa-heart');
+                                                    this.classList.toggle('fa-heart-o');
+                                                    this.classList.toggle('active');
+                                                });
+                                            });
+                                        </script>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-6 col-md-4">
+                                    <div class="cart_title_dis">
+                                        <h3>KULZER</h3>
+                                        <p>Variotime Dynamix Putty (2x380 ml)</p>
+                                        <span
+                                            class="status_cart status_product green_color position-static">Kampanya</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-6 col-md-2">
+                                    <div class="counter-box">
+                                        <div class="btnn" id="decrement">-</div>
+                                        <div class="count" id="count">0</div>
+                                        <div class="btnn" id="increment">+</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-6 col-md-3">
+                                    <div class="cart_product_prize">
+                                        <spam class="one_prize">3.030,00 TL</spam> <br>
+                                        <spam class="one_prize">3.030,00 TL</spam> <br>
+                                        <spam class="total_prize">3.333,00 TL</spam>
+                                    </div>
+                                </div>
+                            </div>
+                            <i class="fa fa-times card_items_close" aria-hidden="true"></i>
+                        </div>
+                        <script>
+                            const countEl = document.getElementById('count');
+                            const incrementBtn = document.getElementById('increment');
+                            const decrementBtn = document.getElementById('decrement');
+
+                            let count = 0;
+
+                            function updateDisplay() {
+                                countEl.textContent = count;
+                                // Disable minus button if count is 0
+                                decrementBtn.disabled = count === 0;
+                            }
+
+                            incrementBtn.addEventListener('click', () => {
+                                count++;
+                                updateDisplay();
+                            });
+
+                            decrementBtn.addEventListener('click', () => {
+                                if (count > 0) {
+                                    count--;
+                                    updateDisplay();
+                                }
+                            });
+
+                            // Initial state
+                            updateDisplay();
+                        </script>
+                        <!-- ====== Items End   -->
+                        <!-- ====== Items Start   -->
+                        <div class="cart_card_items">
+                            <div class="row">
+                                <div class="col-lg-3 col-6 col-md-3">
+                                    <div class="cart_img position-relative">
+                                        <img src="images/cart/product_02.png" alt="img">
+                                        <i class="fa fa-heart-o heart-toggle2" aria-hidden="true"></i>
+                                        <script>
+                                            document.querySelectorAll('.heart-toggle2').forEach(function (icon) {
+                                                icon.addEventListener('click', function () {
+                                                    this.classList.toggle('fa-heart');
+                                                    this.classList.toggle('fa-heart-o');
+                                                    this.classList.toggle('active');
+                                                });
+                                            });
+                                        </script>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-6 col-md-4">
+                                    <div class="cart_title_dis">
+                                        <h3>KULZER</h3>
+                                        <p>Variotime Dynamix Putty (2x380 ml)</p>
+                                        <span
+                                            class="status_cart status_product green_color position-static">Kampanya</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-6 col-md-2">
+                                    <div class="counter-box">
+                                        <div class="btnn" id="decrement2">-</div>
+                                        <div class="count" id="count2">0</div>
+                                        <div class="btnn" id="increment2">+</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-6 col-md-3">
+                                    <div class="cart_product_prize">
+                                        <spam class="one_prize">3.030,00 TL</spam> <br>
+                                        <spam class="one_prize">3.030,00 TL</spam> <br>
+                                        <spam class="total_prize">3.333,00 TL</spam>
+                                    </div>
+                                </div>
+                            </div>
+                            <i class="fa fa-times card_items_close" aria-hidden="true"></i>
+                        </div>
+                        <script>
+                            const countEl2 = document.getElementById('count2');
+                            const incrementBtn2 = document.getElementById('increment2');
+                            const decrementBtn2 = document.getElementById('decrement2');
+
+                            let count2 = 0;
+
+                            function updateDisplay2() {
+                                countEl2.textContent = count2;
+                                // Disable minus button if count is 0
+                                decrementBtn2.disabled = count2 === 0;
+                            }
+
+                            incrementBtn2.addEventListener('click', () => {
+                                count2++;
+                                updateDisplay2();
+                            });
+
+                            decrementBtn2.addEventListener('click', () => {
+                                if (count2 > 0) {
+                                    count2--;
+                                    updateDisplay2();
+                                }
+                            });
+
+                            // Initial state
+                            updateDisplay2();
+                        </script>
+                        <!-- ====== Items End   -->
+                        <!-- ====== Items Start   -->
+                        <div class="cart_card_items">
+                            <div class="row">
+                                <div class="col-lg-3 col-6 col-md-3">
+                                    <div class="cart_img position-relative">
+                                        <img src="images/cart/product_03.png" alt="img">
+                                        <i class="fa fa-heart-o heart-toggle3" aria-hidden="true"></i>
+                                        <script>
+                                            document.querySelectorAll('.heart-toggle3').forEach(function (icon) {
+                                                icon.addEventListener('click', function () {
+                                                    this.classList.toggle('fa-heart');
+                                                    this.classList.toggle('fa-heart-o');
+                                                    this.classList.toggle('active');
+                                                });
+                                            });
+                                        </script>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-6 col-md-4">
+                                    <div class="cart_title_dis">
+                                        <h3>KULZER</h3>
+                                        <p>Variotime Dynamix Putty (2x380 ml)</p>
+                                        <span
+                                            class="status_cart status_product green_color position-static">Kampanya</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-6 col-md-2">
+                                    <div class="counter-box">
+                                        <div class="btnn" id="decrement3">-</div>
+                                        <div class="count" id="count3">0</div>
+                                        <div class="btnn" id="increment3">+</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-6 col-md-3">
+                                    <div class="cart_product_prize">
+                                        <spam class="one_prize">3.030,00 TL</spam> <br>
+                                        <spam class="one_prize">3.030,00 TL</spam> <br>
+                                        <spam class="total_prize">3.333,00 TL</spam>
+                                    </div>
+                                </div>
+                            </div>
+                            <i class="fa fa-times card_items_close" aria-hidden="true"></i>
+                        </div>
+                        <script>
+                            const countEl3 = document.getElementById('count3');
+                            const incrementBtn3 = document.getElementById('increment3');
+                            const decrementBtn3 = document.getElementById('decrement3');
+
+                            let count3 = 0;
+
+                            function updateDisplay3() {
+                                countEl3.textContent = count3;
+                                // Disable minus button if count is 0
+                                decrementBtn3.disabled = count3 === 0;
+                            }
+
+                            incrementBtn3.addEventListener('click', () => {
+                                count3++;
+                                updateDisplay3();
+                            });
+
+                            decrementBtn3.addEventListener('click', () => {
+                                if (count3 > 0) {
+                                    count3--;
+                                    updateDisplay3();
+                                }
+                            });
+
+                            // Initial state
+                            updateDisplay2();
+                        </script>
+                        <!-- ====== Items End   -->
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="summary_las">
+                        <!-- ===== Total Prize and Shopping  -->
+                        <div class="cart_right_title">
+                            <h3>Ücretsiz Kargo Hakkı Kazandınız!</h3>
+                        </div>
+                        <div class="order_summary_box">
+                            <div class="order_summary_title">
+                                <h3>Sipariş Özeti</h3>
+                            </div>
+                            <div class="order_summary_list">
+                                <div class="order_sum_title_prize d-flex justify-content-between">
+                                    <p>Sepet Toplam</p>
+                                    <span>9.090,00 TL</span>
+                                </div>
+                                <div class="order_sum_title_prize d-flex justify-content-between">
+                                    <p>İndirim</p>
+                                    <span>909,00 TL</span>
+                                </div>
+                                <div class="order_sum_title_prize d-flex justify-content-between">
+                                    <p>KDV</p>
+                                    <span>909,00 TL</span>
+                                </div>
+                                <div class="order_sum_title_prize d-flex justify-content-between">
+                                    <p>Kargo</p>
+                                    <span>0,00 TL</span>
+                                </div>
+                            </div>
+                            <div class="payment_type">
+                                <div class="title_main">Ödeme Türü</div>
+
+                                <label class="option">
+                                    <input type="radio" name="odeme" value="kredi" checked>
+                                    <div class="option-content">
+                                        <div class="c_s_title">Mail Order / Kredi Kartı</div>
+                                        <strong class="c_s_total">9.999,00 TL</strong>
+                                        <small>(Siparişinizi oluşturun, vade farksız 1-9 taksit seçeneği için sizi
+                                            arayalım)</small>
+                                    </div>
+                                </label>
+
+                                <label class="option">
+                                    <input type="radio" name="odeme" value="havale">
+                                    <div class="option-content">
+                                        <div class="c_s_title">Havale / EFT</div>
+                                        <strong class="c_s_total">9.999,00 TL</strong>
+                                        <small>(%6 İndirim - Kampanyalı ve spot ürünlere uygulanmaz)</small>
+                                    </div>
+                                </label>
+                                <div class="total_text_and_prize">
+                                    <p>Toplam</p>
+                                    <h3>9.999,00 TL</h3>
+                                    <button type="submit">Ödeme Yap</button>
+                                </div>
+
+                                <div class="cart_s_policy d-flex justify-content-center mt-2 text-center">
+                                    <p><a href="#">Ön Bilgilendirme Koşulları</a>‘nı ve
+                                        <a href="#">Mesafeli Satış Sözleşmesi</a>‘ni okudum, onaylıyorum.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========== View cart Area End Here ==========  -->
+
+
+
+    <!-- ========== Feature Area Start Here ==========  -->
+    <section id="feature_area">
+        <div class="container my-5">
+            <div class="scroll-wrapper">
+                <div class="feature-box">
+                    <div class="feature-icon"><img src="images/icons/credit_card.svg" alt="icons"></div>
+                    <div class="feature-title">Esnek, Hızlı ve Güvenli Ödeme</div>
+                    <p class="feature-desc">Kredi Kartı / Nakit / Çeşitli Ödeme Seçenekleri</p>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon"><img src="images/icons/assignment_return.svg" alt="icons"></div>
+                    <div class="feature-title">Kolay İade ve Değişim</div>
+                    <p class="feature-desc">Müşteri Odaklı, Satış Sonrası Hizmetleri</p>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon"><img src="images/icons/workspace_premium.svg" alt="icons"></div>
+                    <div class="feature-title">Orijinallik Güvencesi</div>
+                    <p class="feature-desc">Marka Onaylı ve Standartlara Uygun Ürün Satışı</p>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon"><img src="images/icons/box.svg" alt="icons"></div>
+                    <div class="feature-title">Hızlı ve Özenli Teslimat</div>
+                    <p class="feature-desc">Avantajlı Fiyatlar ve Hızlı Gönderim ile Hassas Ürünler Güvenle Kapınızda
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== Feature Area End Here ==========  -->
+
+    <!-- ========== Footer Area Start Here ==========  -->
+    <footer>
+        <div class="container">
+            <div class="row text-start text-md-left">
+
+                <!-- Logo & App -->
+                <div class="col-lg-4 col-md-6 footer-section mb-4 mb-lg-0 d-flex">
+                    <div class="grup">
+                        <div class="footer-logo mb-2"><img class="w-75" src="images/footer_logo.png" alt="logo"></div>
+                        <div>Türkiye’nin Dental Vitrini<br>+90 531 701 91 53</div>
+                        <div class="my-2 mt-4"><img src="images/footer_sub_logo.png" alt="Capadental"></div>
+                    </div>
+                    <div class="app-buttons">
+                        <a href="#"><img src="images/icons/AppStore.svg" alt="appstore"></a>
+                        <a href="#"><img src="images/icons/GooglePlay.svg" alt="playstore"></a>
+
+                    </div>
+                </div>
+
+                <!-- Destek -->
+                <div class="col-lg-2 col-md-6 footer-section footer-links">
+                    <h6>Destek</h6>
+                    <a href="#">İletişim Formu</a>
+                    <a href="#">Müşteri Hizmetleri</a>
+                    <a href="#">Sipariş Takip</a>
+                </div>
+
+                <!-- Yardım -->
+                <div class="col-lg-2 col-md-6 footer-section footer-links">
+                    <h6>Yardım</h6>
+                    <a href="#">Sıkça Sorulan Sorular</a>
+                    <a href="#">İade ve Değişim</a>
+                    <a href="#">Ödeme Seçenekleri</a>
+                    <a href="#">Site Haritası</a>
+                </div>
+
+                <!-- Kurumsal -->
+                <div class="col-lg-2 col-md-6 footer-section footer-links">
+                    <h6>Kurumsal</h6>
+                    <a href="#">Hakkımızda</a>
+                    <a href="#">Kariyer</a>
+                    <a href="#">Fırsatlar</a>
+                </div>
+
+                <!-- Politikalar -->
+                <div class="col-lg-2 col-md-6 footer-section footer-links">
+                    <h6>Politikalar</h6>
+                    <a href="#">Satış Sözleşmesi</a>
+                    <a href="#">KVKK</a>
+                </div>
+            </div>
+
+            <div class="row mt-5 align-items-center last_bottom_text">
+                <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                    <div class="mt-2">
+                        <img src="images/icons/payment.svg" alt="VISA & TRY">
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <p class="mb-0">Bizi Takip Edin</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-youtube-play"></i></a>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-times"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center copy_textt">
+                    2025©DentalVitrin - Tüm Hakları Saklıdır.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="bottom-nav">
+        <a href="#" class="active"><i class="fa fa-home"></i></a>
+        <a href="#"><i class="fa fa-search"></i></a>
+        <a href="#"><i class="fa fa-heart-o"></i></a>
+        <a href="#"><i class="fa fa-phone"></i></a>
+        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+    </div>
+    <!-- ========== Footer Area End Here ==========  -->
+    <!-- ========== All Js Link Here ===== -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/new.js"></script>
+</body>
+
+</html>
