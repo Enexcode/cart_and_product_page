@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Cart Page</title>
     <!-- ========== All Css Link Here ===== -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -153,12 +153,7 @@
     <!-- ========== Header Area End Here ==========  -->
 
     <!-- ========== View cart Area Start Here ==========  -->
-     <style>
-        #view_cart_area .container-fluid{
-            padding-left: 2%;
-            padding-right: 2%;
-        }
-     </style>
+    
     <section id="view_cart_area">
         <div class="cart_title text-center">
             <h3>Sepetim</h3>
@@ -174,16 +169,6 @@
                                     <div class="cart_img position-relative">
                                         <img src="images/cart/product_01.png" alt="img">
                                         <i class="fa fa-heart-o heart-toggle" aria-hidden="true"></i>
-                                        <script>
-                                            document.querySelectorAll('.heart-toggle').forEach(function (icon) {
-                                                icon.addEventListener('click', function () {
-                                                    this.classList.toggle('fa-heart');
-                                                    this.classList.toggle('fa-heart-o');
-                                                    this.classList.toggle('active');
-                                                });
-                                            });
-                                        </script>
-
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-6 col-md-4">
@@ -196,196 +181,100 @@
                                 </div>
                                 <div class="col-lg-2 col-6 col-md-2">
                                     <div class="counter-box">
-                                        <div class="btnn" id="decrement">-</div>
-                                        <div class="count" id="count">0</div>
-                                        <div class="btnn" id="increment">+</div>
+                                        <div class="btnn decrement">-</div>
+                                        <div class="count">1</div>
+                                        <div class="btnn increment">+</div>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-6 col-md-3">
                                     <div class="cart_product_prize">
-                                        <spam class="one_prize">3.030,00 TL</spam> <br>
-                                        <spam class="one_prize">3.030,00 TL</spam> <br>
-                                        <spam class="total_prize">3.333,00 TL</spam>
+                                        <span class="one_prize">3.030,00 TL</span><br>
+                                        <span class="one_prize">3.030,00 TL</span><br>
+                                        <span class="total_prize">3.333,00 TL</span>
                                     </div>
                                 </div>
                             </div>
-                            <i class="fa fa-times card_items_close" aria-hidden="true"></i>
+                            <i class="fa fa-times card_items_close items_close_btn" aria-hidden="true"></i>
                         </div>
-                        <script>
-                            const countEl = document.getElementById('count');
-                            const incrementBtn = document.getElementById('increment');
-                            const decrementBtn = document.getElementById('decrement');
-
-                            let count = 0;
-
-                            function updateDisplay() {
-                                countEl.textContent = count;
-                                // Disable minus button if count is 0
-                                decrementBtn.disabled = count === 0;
-                            }
-
-                            incrementBtn.addEventListener('click', () => {
-                                count++;
-                                updateDisplay();
-                            });
-
-                            decrementBtn.addEventListener('click', () => {
-                                if (count > 0) {
-                                    count--;
-                                    updateDisplay();
-                                }
-                            });
-
-                            // Initial state
-                            updateDisplay();
-                        </script>
-                        <!-- ====== Items End   -->
-                        <!-- ====== Items Start   -->
+                        
+                        <!-- ====== Items End -->
+                          <!-- ====== Items Start   -->
                         <div class="cart_card_items">
                             <div class="row">
                                 <div class="col-lg-3 col-6 col-md-3">
                                     <div class="cart_img position-relative">
                                         <img src="images/cart/product_02.png" alt="img">
-                                        <i class="fa fa-heart-o heart-toggle2" aria-hidden="true"></i>
-                                        <script>
-                                            document.querySelectorAll('.heart-toggle2').forEach(function (icon) {
-                                                icon.addEventListener('click', function () {
-                                                    this.classList.toggle('fa-heart');
-                                                    this.classList.toggle('fa-heart-o');
-                                                    this.classList.toggle('active');
-                                                });
-                                            });
-                                        </script>
-
+                                        <i class="fa fa-heart-o heart-toggle" aria-hidden="true"></i>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-6 col-md-4">
                                     <div class="cart_title_dis">
-                                        <h3>KULZER</h3>
-                                        <p>Variotime Dynamix Putty (2x380 ml)</p>
+                                        <h3>META BIOMED</h3>
+                                        <p>Ceraseal Bioceramic Esaslı Kanal Dolgu Patı</p>
                                         <span
                                             class="status_cart status_product green_color position-static">Kampanya</span>
                                     </div>
                                 </div>
                                 <div class="col-lg-2 col-6 col-md-2">
                                     <div class="counter-box">
-                                        <div class="btnn" id="decrement2">-</div>
-                                        <div class="count" id="count2">0</div>
-                                        <div class="btnn" id="increment2">+</div>
+                                        <div class="btnn decrement">-</div>
+                                        <div class="count">1</div>
+                                        <div class="btnn increment">+</div>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-6 col-md-3">
                                     <div class="cart_product_prize">
-                                        <spam class="one_prize">3.030,00 TL</spam> <br>
-                                        <spam class="one_prize">3.030,00 TL</spam> <br>
-                                        <spam class="total_prize">3.333,00 TL</spam>
+                                        <span class="one_prize">3.030,00 TL</span><br>
+                                        <span class="one_prize">3.030,00 TL</span><br>
+                                        <span class="total_prize">3.333,00 TL</span>
                                     </div>
                                 </div>
                             </div>
-                            <i class="fa fa-times card_items_close" aria-hidden="true"></i>
+                            <i class="fa fa-times card_items_close items_close_btn" aria-hidden="true"></i>
                         </div>
-                        <script>
-                            const countEl2 = document.getElementById('count2');
-                            const incrementBtn2 = document.getElementById('increment2');
-                            const decrementBtn2 = document.getElementById('decrement2');
-
-                            let count2 = 0;
-
-                            function updateDisplay2() {
-                                countEl2.textContent = count2;
-                                // Disable minus button if count is 0
-                                decrementBtn2.disabled = count2 === 0;
-                            }
-
-                            incrementBtn2.addEventListener('click', () => {
-                                count2++;
-                                updateDisplay2();
-                            });
-
-                            decrementBtn2.addEventListener('click', () => {
-                                if (count2 > 0) {
-                                    count2--;
-                                    updateDisplay2();
-                                }
-                            });
-
-                            // Initial state
-                            updateDisplay2();
-                        </script>
-                        <!-- ====== Items End   -->
-                        <!-- ====== Items Start   -->
+                        
+                        <!-- ====== Items End -->
+                          <!-- ====== Items Start   -->
                         <div class="cart_card_items">
                             <div class="row">
                                 <div class="col-lg-3 col-6 col-md-3">
                                     <div class="cart_img position-relative">
                                         <img src="images/cart/product_03.png" alt="img">
-                                        <i class="fa fa-heart-o heart-toggle3" aria-hidden="true"></i>
-                                        <script>
-                                            document.querySelectorAll('.heart-toggle3').forEach(function (icon) {
-                                                icon.addEventListener('click', function () {
-                                                    this.classList.toggle('fa-heart');
-                                                    this.classList.toggle('fa-heart-o');
-                                                    this.classList.toggle('active');
-                                                });
-                                            });
-                                        </script>
-
+                                        <i class="fa fa-heart-o heart-toggle" aria-hidden="true"></i>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-6 col-md-4">
                                     <div class="cart_title_dis">
-                                        <h3>KULZER</h3>
-                                        <p>Variotime Dynamix Putty (2x380 ml)</p>
+                                        <h3>DNH MEDTECH</h3>
+                                        <p>Accto-50Rf 4Mhz Radiosurgery Cihazı</p>
                                         <span
-                                            class="status_cart status_product green_color position-static">Kampanya</span>
+                                            class="status_cart status_product red_color position-static">Outlet</span>
                                     </div>
                                 </div>
                                 <div class="col-lg-2 col-6 col-md-2">
                                     <div class="counter-box">
-                                        <div class="btnn" id="decrement3">-</div>
-                                        <div class="count" id="count3">0</div>
-                                        <div class="btnn" id="increment3">+</div>
+                                        <div class="btnn decrement">-</div>
+                                        <div class="count">1</div>
+                                        <div class="btnn increment">+</div>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-6 col-md-3">
                                     <div class="cart_product_prize">
-                                        <spam class="one_prize">3.030,00 TL</spam> <br>
-                                        <spam class="one_prize">3.030,00 TL</spam> <br>
-                                        <spam class="total_prize">3.333,00 TL</spam>
+                                        <span class="one_prize">3.030,00 TL</span><br>
+                                        <span class="one_prize">3.030,00 TL</span><br>
+                                        <span class="total_prize">3.333,00 TL</span>
                                     </div>
                                 </div>
                             </div>
-                            <i class="fa fa-times card_items_close" aria-hidden="true"></i>
+                            <i class="fa fa-times card_items_close items_close_btn" aria-hidden="true"></i>
                         </div>
-                        <script>
-                            const countEl3 = document.getElementById('count3');
-                            const incrementBtn3 = document.getElementById('increment3');
-                            const decrementBtn3 = document.getElementById('decrement3');
+                        
+                        <!-- ====== Items End -->
 
-                            let count3 = 0;
 
-                            function updateDisplay3() {
-                                countEl3.textContent = count3;
-                                // Disable minus button if count is 0
-                                decrementBtn3.disabled = count3 === 0;
-                            }
 
-                            incrementBtn3.addEventListener('click', () => {
-                                count3++;
-                                updateDisplay3();
-                            });
 
-                            decrementBtn3.addEventListener('click', () => {
-                                if (count3 > 0) {
-                                    count3--;
-                                    updateDisplay3();
-                                }
-                            });
 
-                            // Initial state
-                            updateDisplay2();
-                        </script>
-                        <!-- ====== Items End   -->
                     </div>
                 </div>
                 <div class="col-lg-3">
@@ -444,8 +333,9 @@
                                 </div>
 
                                 <div class="cart_s_policy d-flex justify-content-center mt-2 text-center">
-                                    <p><a href="#">Ön Bilgilendirme Koşulları</a>‘nı ve
-                                        <a href="#">Mesafeli Satış Sözleşmesi</a>‘ni okudum, onaylıyorum.</p>
+                                    <p><a class="pop_show_one" >Ön Bilgilendirme Koşulları</a>‘nı ve
+                                        <a class="customPopTrigger" href="#">Mesafeli Satış Sözleşmesi</a>‘ni okudum, onaylıyorum.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -455,8 +345,104 @@
         </div>
     </section>
     <!-- ========== View cart Area End Here ==========  -->
+<!-- ===== popup   -->
+ <!-- Backdrop -->
+<div id="popupBackdrop" class="popup-backdrop"></div>
+
+<!-- Popup -->
+<div id="popup" class="popup-overlay">
+  <div class="popup-handle"></div>
+  <h5 class="text-center mb-3">SÖZLEŞME</h5>
+<p style="font-size: 14px;">
+  <strong>SATIŞ SÖZLEŞMESİ ÖN BİLGİLENDİRME METNİ</strong><br><br>
+  <strong>EGE ÇAPA DENTAL – DENTAL VİTRİN</strong><br>
+  <strong>1.TARAFLAR VE KONU</strong><br>
+  Taraflar iş bu mesafeli satış sözleşmesinin aşağıda belirtilen hüküm ve şartlar çerçevesinde imzalanmıştır.<br><br>
+
+  <strong>A) SATICI:</strong> Ege Çapa Dental Tıbbi Cihazlar Turizm Sanayi ve Ltd. Şti.<br><br>
+
+  <strong>B) ALICI:</strong> Türkiye Cumhuriyeti Üniversitelerinden ve yabancı ülke üniversitelerinden mezun olup da Türkiye Cumhuriyeti sınırları içerisinde denklik almış bulunan Diş Hekimliği Fakültesi mezunu diş hekimleri ve diş hekimliği yüksek lisans, doktora bölümlerinde ihtisas gerçekleştiren diş hekimi unvanını haiz kişiler, diş hekimliği fakültesinde lisans programına devam eden öğrenciler ve mevzuata uygun şekilde teşekkül etmiş ve bu alanda faaliyet gösteren her türlü anonim, limited, komandit şirketleri kapsar.<br><br>
+
+  <strong>ALICI BİLGİLERİ</strong><br>
+  Adı, Soyadı: <br>
+  TC / Vergi No: <br>
+  Teslimat Adresi: <br>
+  Telefon: <br>
+  E-posta/Kullanıcı Adı: <br><br>
+
+  <strong>SATICI BİLGİLERİ</strong><br>
+  Unvanı: Ege Çapa Dental Tıbbi Cihazlar Turizm Sanayi ve Ltd. Şti.<br>
+  Adresi: Adalet Mah. 2131/10 Sk. No:10/A Bayraklı/İZMİR<br>
+  Faks: <br>
+  Telefon: <br>
+  Eposta: <br><br>
+
+  <strong>KONU</strong><br>
+  İşbu satış sözleşmesi, alıcının, satıcının kişiye özel sunmuş olduğu satışa ait uygulama üzerinden elektronik ortamda siparişini verdiği aşağıda nitelikleri ve satış fiyatı belirtilen ürünün satışı ve teslimi ile ilgili olarak 6092 sayılı Türk Borçlar Kanunu ve 6102 Türk Ticaret Kanunu ve 6502 sayılı Tüketicinin Korunması Hakkında Kanun hükümleri gereğince tarafların hak ve yükümlülüklerini düzenler.<br><br>
+
+  Ege Çapa Dental Şirketi, Ağız ve Diş Sağlığı üzerine faaliyet gösteren, yukarıda alıcı açıklamasında belirtilen şartları sağlayan alıcılara faaliyet alanlarının gerektirdiği en az FDA/CE/MDR/EN ISO 13485 onaylarından birine sahip, ÜTS Onaylı veya ÜTS Kapsam dışı her nevi sarf malzemesi ve teknik cihaz satışını içerir.<br><br>
+
+  Listelenen ve uygulama içerisinde ilan edilen fiyatlar satış fiyatıdır. İlan edilen fiyatlar ve vaatler güncelleme yapılana ve değiştirilene kadar geçerlidir. Süreli olarak ilan edilen fiyatlar ise belirtilen süre sonuna kadar geçerlidir.<br><br>
+
+  <strong>2. SÖZLEŞME KONUSU ÜRÜNÜN BİLGİLERİ</strong><br>
+  Ürünün temel özellikleri (türü, miktarı, marka/modeli, rengi, adedi) SATICI’nın kişiye özel hizmet verdiği uygulama içerisinde yer almaktadır. Ürün hakkında gerekli bilgiler uygulama üzerinden görüntülenebilir.<br><br>
+
+  Ürünün cinsi, miktarı, rengi, vergiler dahil satış bedeli aşağıda belirtilmiştir:<br><br>
+  Ürün Açıklaması: <br>
+  Fiyat (KDV Hariç): <br>
+  KDV Oranı: <br>
+  KDV Dahil Fiyat: <br>
+  Kargo Tutarı: <br>
+  Genel Toplam: <br>
+  Ödeme Şekli ve Planı: <br>
+  Teslimat Adresi: <br>
+  Teslim Edilecek Kişi: <br>
+  Fatura Adresi: <br>
+  Sipariş Tarihi: <br>
+  Teslimat Tarihi: Sipariş tarihinden sonra 1-5 iş günü içinde <br>
+  Teslim Şekli: Kargo veya şirket çalışanları tarafından kapı teslim.<br>
+  <em>*1500 TL ve Üzeri ürünlerde kargo ücretsizdir. 1499 TL ve altındaki siparişlerde kargo ALICI’ya aittir.</em><br><br>
+
+  <strong>3. FATURA BİLGİLERİ</strong><br>
+  Adı-Soyadı / Unvanı: <br>
+  Adres: <br>
+  Telefon: <br>
+  Eposta/Kullanıcı Adı: <br>
+  Fatura Teslim: Sipariş ile birlikte fatura adresine gönderilir.<br><br>
+
+  <strong>4. GENEL HÜKÜMLER</strong><br>
+  4.1 - 4.13 maddeleri yukarıda verdiğiniz tam haliyle düzenlenmiştir.<br><br>
+
+  <strong>5. CAYMA HAKKI VE SÖZLEŞMEDEN DÖNME</strong><br>
+  5.1 - 5.4 maddeleri yukarıda verdiğiniz içerikle birlikte sözleşmede yer almaktadır.<br><br>
+
+  <em>Not: 5.4 maddesinin devamı eksik görünmektedir. İsterseniz kalan kısmı da tamamlayabilirim.</em>
+</p>
+
+</div>
 
 
+<!-- ===== popup  2  -->
+ <div id="customPopupBackdrop" class="custom-popup-backdrop"></div>
+
+<div id="customPopup" class="custom-popup-overlay">
+  <div class="custom-popup-handle"></div>
+  <h5 class="text-center mb-3">SÖZLEŞME</h5>
+  <p style="font-size: 14px;">
+    <strong>SATIŞ SÖZLEŞMESİ ÖN BİLGİLENDİRME METNİ</strong><br><br>
+    <strong>EGE ÇAPA DENTAL – DENTAL VİTRİN</strong><br>
+    <strong>1.TARAFLAR VE KONU</strong><br>
+    Taraflar iş bu mesafeli satış sözleşmesinin aşağıdaki belirtilen hüküm ve şartlar çerçevesinde imzalanmıştır.<br><br>
+
+    <strong>A) SATICI:</strong> Ege Çapa Dental Tıbbi Cihazlar Turizm Sanayi ve Ltd. Şti.<br><br>
+
+    <strong>B) ALICI:</strong> Türkiye Cumhuriyeti Üniversitelerinden ve yabancı ülke üniversitelerinden mezun olup da Türkiye Cumhuriyeti sınırları içerisinde denklik almış bulunan Diş Hekimliği Fakültesi mezunu diş hekimleri ve diş hekimliği yüksek lisans, doktora ve bilimsel araştırma eğitimi almış diş hekimi unvanını haiz kişiler, diş hekimliği fakültesinde lisans programına devam eden öğrenciler ve mevzuata uygun şekilde teşekkül etmiş ve bu alanda faaliyet gösteren her türlü anonim, limited, komandit şirketleri kapsar.<br><br>
+
+    <strong>ALICI BİLGİLERİ</strong><br>
+    Adı, Soyadı :<br>
+    TC / Vergi No : :
+  </p>
+</div>
 
     <!-- ========== Feature Area Start Here ==========  -->
     <section id="feature_area">
@@ -491,6 +477,67 @@
     </section>
 
     <!-- ========== Feature Area End Here ==========  -->
+    <!-- ====== Popups (Only once in page) ====== -->
+    <div id="confirmRemoveFavorite"
+        style="display:none;">
+        <div class="popup-card text-center">
+            <div class="d-flex ps-4 pe-4 pt-3">
+                <div class="popup-icon">
+                    <img src="images/icons/close_cricle.svg" alt="icons">
+                </div>
+                <div class="popup-content">
+                    <h3>Favorileri sil?</h3>
+                    <p>Favorilerden kaldırılacak!</p>
+                </div>
+            </div>
+            <div class="d-flex justify-content-around gap-2">
+                <button class="popup-btn" style="background-color: #9EBD54; border: none;" id="favYes">Evet</button>
+                <button class="popup-btn" style="border: none;" id="favNo">HAYIR</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="favoritePopup" class="popup-wrapper" style="display:none;">
+        <div class="popup-card text-center">
+            <div class="d-flex ps-4 pe-4 pt-3">
+                <div class="popup-icon">
+                    <img src="images/icons/check_circle.svg" alt="icons">
+                </div>
+                <div class="popup-content">
+                    <h3>Favorilere Eklendi</h3>
+                    <p>Ürün favori listenize eklenmiştir.</p>
+                </div>
+            </div>
+            <a href="/favoriler" class="popup-btn" id="fav_page">Favorilere Git</a>
+        </div>
+    </div>
+
+    <div id="confirmRemoveCart"
+        style="display:none;">
+        <div class="popup-card text-center">
+            <div class="d-flex ps-4 pe-4 pt-3">
+                <div class="popup-icon">
+                    <img src="images/icons/close_cricle.svg" alt="icons">
+                </div>
+                <div class="popup-content text-start">
+                    <h3>Ürünü Sil ve Favorilere Ekle</h3>
+                    <p>Sepetinizden çıkardıktan sonra</p>
+                </div>
+            </div>
+            <div class="d-block mb-2">
+                <button class="popup-btn" style="border: none;" id="remove_and_fav">Sil ve
+                    Favorilere Ekle</button>
+            </div>
+            <div class="d-flex justify-content-around gap-2">
+                <button class="popup-btn2" style="border: none;" id="cartNo">Vazgeç</button>
+                <button class="popup-btn2" style="border: none;" id="cartYes">Sil</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
 
     <!-- ========== Footer Area Start Here ==========  -->
     <footer>
@@ -580,7 +627,6 @@
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/slick.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/new.js"></script>
 </body>
 
 </html>
