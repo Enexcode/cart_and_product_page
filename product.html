@@ -159,7 +159,7 @@
             padding-right: 2%;
         }
     </style>
-    <section id="single_product">
+    <section id="single_product" class="mb-5">
         <nav class="breadcrumb-wrapper ps-5 pe-5" aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Ana Sayfa</a></li>
@@ -170,66 +170,278 @@
                 </li>
             </ol>
         </nav>
-        <div class="container-fluid">
+        <div class="container-fluid mt-3">
             <div class="row">
                 <div class="col-lg-8">
                     <div class="single_product_img">
-                        <div class="single_product_img_list d-flex ">
+                        <div class="single_product_img_list d-flex position-relative">
                             <img src="images/single_product/product_01.png" alt="product">
                             <img src="images/single_product/product_02.png" alt="product">
+                            <i class="fa fa-heart-o heart-toggle mobile_show" aria-hidden="true"></i>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="single_product_title">
+                    <div class="single_product_title d-flex justify-content-between">
                         <h3>Cortex Magix Conical Implant</h3>
+                        <i class="fa fa-heart-o heart-toggle mobile_hide" aria-hidden="true"></i>
                     </div>
                     <div class="single_product_total_prize">
                         <h3>4.704,00 TL</h3>
                     </div>
-                    
+                    <div class="product_size">
+                        <div class="cap_mm">
+                            <p>Çap (mm)</p>
+                        </div>
+                        <div class="size-options">
+                            <label class="size-box">
+                                <input type="radio" name="size" value="8">
+                                <span>3.3</span>
+                            </label>
+                            <label class="size-box">
+                                <input type="radio" name="size" value="10">
+                                <span>3.8</span>
+                            </label>
+                            <label class="size-box">
+                                <input type="radio" name="size" value="11.5">
+                                <span>4.2</span>
+                            </label>
+                        </div>
+                        <div class="boy_mm">
+                            <p>Boy (mm)</p>
+                        </div>
+                        <div class="size-options">
+                            <label class="size-box">
+                                <input type="radio" name="size_boy" value="8">
+                                <span>8</span>
+                            </label>
+                            <label class="size-box">
+                                <input type="radio" name="size_boy" value="10">
+                                <span>10</span>
+                            </label>
+                            <label class="size-box">
+                                <input type="radio" name="size_boy" value="11.5">
+                                <span>11.5</span>
+                            </label>
+                            <label class="size-box">
+                                <input type="radio" name="size_boy" value="11.5">
+                                <span>13</span>
+                            </label>
+                            <label class="size-box">
+                                <input type="radio" name="size_boy" value="11.5">
+                                <span>16</span>
+                            </label>
+                        </div>
+                        <div class="enex-container text-start">
+                            <div class="enex-info">
+                                Menşei: CN <img src="https://flagcdn.com/w40/cn.png" alt="CN" class="enex-flag" /><br />
+                                En Fazla Satış Adedi: 100<br />
+                                Güncel Döviz Kuru: $ 39,20 TL / € 43,99 TL
+                            </div>
+
+                            <div class="enex-counter">
+                                <button onclick="enexDecrease()">−</button>
+                                <span id="enex-quantity">0</span>
+                                <button onclick="enexIncrease()">+</button>
+                            </div>
+                            <script>
+                                let enexCount = 0;
+                                const enexMaxCount = 100;
+                                const enexQuantityDisplay = document.getElementById('enex-quantity');
+
+                                function enexIncrease() {
+                                    if (enexCount < enexMaxCount) {
+                                        enexCount++;
+                                        enexQuantityDisplay.textContent = enexCount;
+                                    }
+                                }
+
+                                function enexDecrease() {
+                                    if (enexCount > 0) {
+                                        enexCount--;
+                                        enexQuantityDisplay.textContent = enexCount;
+                                    }
+                                }
+                            </script>
+
+                            <button class="enex-btn">Sepete Ekle</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="product_description">
+                        <!-- ===== Desktop Tabs ===== -->
+                        <div class="tab-header gap-2 justify-content-flex-start">
+                            <div class="tab-button active" data-tab="aciklama">AÇIKLAMA</div>
+                            <div class="tab-button" data-tab="detay">DETAY</div>
+                            <div class="tab-button" data-tab="odeme">ÖDEME BİLGİSİ</div>
+                        </div>
+
+                        <div class="tab-content-box active" id="aciklama">
+                            Cortex Magix İmplantları, özellikle minimal invaziv prosedürler ve hızlı iyileşme süreleri
+                            için tasarlanmış bir dental implant sistemidir...
+                        </div>
+                        <div class="tab-content-box" id="detay">
+                            <ol>
+                                <li><strong>Self-Tapping Özellik:</strong> Magix implantları, kendine minimal travma
+                                    yaratarak ileri tip sertlikteki kemiklerde bile (dense bone) özelliğine sahiptir.
+                                </li>
+                                <li><strong>Konik ve Paralel Yapı:</strong> İmplant tasarımı konik, altı ise paralel
+                                    silindirik yapıdadır...</li>
+                                <li><strong>Yüzey İşlem:</strong> SLA yüzey işleme ile yüksek osseointegrasyon sağlar...
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="tab-content-box" id="odeme">
+                            <p>Tüm Cortex implantları <strong>ÖMÜR BOYU GARANTİLİDİR.</strong></p>
+                        </div>
+
+                        <!-- ===== Mobile Accordion ===== -->
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-title">AÇIKLAMA</div>
+                                <div class="accordion-content">
+                                    Cortex Magix İmplantları, özellikle minimal invaziv prosedürler ve hızlı iyileşme
+                                    süreleri için tasarlanmış bir dental implant sistemidir...
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-title">DETAY</div>
+                                <div class="accordion-content">
+                                    <ol>
+                                        <li><strong>Self-Tapping Özellik:</strong> Magix implantları, kendine minimal
+                                            travma yaratarak ileri tip sertlikteki kemiklerde bile çalışabilir.</li>
+                                        <li><strong>Konik ve Paralel Yapı:</strong> İmplant tasarımı konik üst yapı ve
+                                            paralel alt yapı ile kemik kaybını minimize eder.</li>
+                                        <li><strong>Yüzey İşlem:</strong> SLA yüzey işlemi sayesinde yüksek
+                                            osseointegrasyon sağlar.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-title">ÖDEME BİLGİSİ</div>
+                                <div class="accordion-content">
+                                    <p>Tüm Cortex implantları <strong>ÖMÜR BOYU GARANTİLİDİR.</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 single_more_product">
+                    <h3>SON GEZDİĞİNİZ ÜRÜNLER</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="products_scroll_wrapper">
+                <div class="row pe-3">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="products_card position-relative me-0">
+                                <img src="images/products/products_one.png" alt="products">
+                                <h3 class="products_name">WOODPECKER</h3>
+                                <p class="mb-0">Q7 Plasma Air Purifier</p>
+                                <p class="mb-2">&nbsp;</p>
+                                <a href="#">Giriş Yap</a>
+                                <p class="status_product green_color">Kampanya</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="products_card position-relative">
+                                <img src="images/products/product_two.png" alt="products">
+                                <h3 class="products_name">W&amp;H</h3>
+                                <p class="mb-0">Synea Fusion Tg-97</p>
+                                <p class="mb-2">Seramik Rulmanlı Aeratör (Işıksız)</p>
+                                <a href="#">Giriş Yap</a>
+                                <p class="status_product red_color">Outlet</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="products_card position-relative">
+                                <img src="images/products/product_three.png" alt="products">
+                                <h3 class="products_name">KULZER</h3>
+                                <p class="mb-0">Variotime Dynamix Putty (2x380 ml)</p>
+                                <p class="mb-2">&nbsp;</p>
+                                <a href="#">Giriş Yap</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ========== Single Product Area End Here ==========  -->
+    <script>
+        // Desktop Tab Switching
+        const buttons = document.querySelectorAll('.tab-button');
+        const contents = document.querySelectorAll('.tab-content-box');
 
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                const target = button.getAttribute('data-tab');
 
+                buttons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
 
-    <!-- ========== Feature Area Start Here ==========  -->
-    <section id="feature_area">
-        <div class="container my-5">
-            <div class="scroll-wrapper">
-                <div class="feature-box">
-                    <div class="feature-icon"><img src="images/icons/credit_card.svg" alt="icons"></div>
-                    <div class="feature-title">Esnek, Hızlı ve Güvenli Ödeme</div>
-                    <p class="feature-desc">Kredi Kartı / Nakit / Çeşitli Ödeme Seçenekleri</p>
+                contents.forEach(content => {
+                    content.classList.remove('active');
+                });
+
+                document.getElementById(target).classList.add('active');
+            });
+        });
+
+        // Mobile Accordion Toggle
+        document.querySelectorAll(".accordion-title").forEach(title => {
+            title.addEventListener("click", () => {
+                const item = title.parentElement;
+                item.classList.toggle("active");
+            });
+        });
+    </script>
+
+ <!-- ====== Popups (Only once in page) ====== -->
+    <div id="confirmRemoveFavorite"
+        style="display:none;">
+        <div class="popup-card text-center">
+            <div class="d-flex ps-4 pe-4 pt-3">
+                <div class="popup-icon">
+                    <img src="images/icons/close_cricle.svg" alt="icons">
                 </div>
-
-                <div class="feature-box">
-                    <div class="feature-icon"><img src="images/icons/assignment_return.svg" alt="icons"></div>
-                    <div class="feature-title">Kolay İade ve Değişim</div>
-                    <p class="feature-desc">Müşteri Odaklı, Satış Sonrası Hizmetleri</p>
-                </div>
-
-                <div class="feature-box">
-                    <div class="feature-icon"><img src="images/icons/workspace_premium.svg" alt="icons"></div>
-                    <div class="feature-title">Orijinallik Güvencesi</div>
-                    <p class="feature-desc">Marka Onaylı ve Standartlara Uygun Ürün Satışı</p>
-                </div>
-
-                <div class="feature-box">
-                    <div class="feature-icon"><img src="images/icons/box.svg" alt="icons"></div>
-                    <div class="feature-title">Hızlı ve Özenli Teslimat</div>
-                    <p class="feature-desc">Avantajlı Fiyatlar ve Hızlı Gönderim ile Hassas Ürünler Güvenle Kapınızda
-                    </p>
+                <div class="popup-content">
+                    <h3>Favorileri sil?</h3>
+                    <p>Favorilerden kaldırılacak!</p>
                 </div>
             </div>
+            <div class="d-flex justify-content-around gap-2">
+                <button class="popup-btn" style="background-color: #9EBD54; border: none;" id="favYes">Evet</button>
+                <button class="popup-btn" style="border: none;" id="favNo">HAYIR</button>
+            </div>
         </div>
-    </section>
+    </div>
 
-    <!-- ========== Feature Area End Here ==========  -->
+    <div id="favoritePopup" class="popup-wrapper" style="display:none;">
+        <div class="popup-card text-center">
+            <div class="d-flex ps-4 pe-4 pt-3">
+                <div class="popup-icon">
+                    <img src="images/icons/check_circle.svg" alt="icons">
+                </div>
+                <div class="popup-content">
+                    <h3>Favorilere Eklendi</h3>
+                    <p>Ürün favori listenize eklenmiştir.</p>
+                </div>
+            </div>
+            <a href="/favoriler" class="popup-btn" id="fav_page">Favorilere Git</a>
+        </div>
+    </div>
+
 
     <!-- ========== Footer Area Start Here ==========  -->
     <footer>

@@ -597,9 +597,9 @@ a{
     background-color: #9EBD54;
 }
 .products_scroll_wrapper {
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
+	-webkit-overflow-scrolling: touch;
+	scrollbar-width: none;
+	overflow-x: hidden;
 }
 .products_scroll_wrapper::-webkit-scrollbar {
   display: none;
