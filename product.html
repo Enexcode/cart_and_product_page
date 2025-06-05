@@ -170,7 +170,7 @@
                 </li>
             </ol>
         </nav>
-        <div class="container-fluid mt-3">
+        <div class="container-fluid desk_padding mt-3">
             <div class="row">
                 <div class="col-lg-8">
                     <div class="single_product_img">
@@ -183,139 +183,140 @@
                 </div>
                 <div class="col-lg-4">
                     <form id="productForm" action="#" method="post" onsubmit="return validateForm()">
-    <div class="single_product_title d-flex justify-content-between">
-        <h3>Cortex Magix Conical Implant</h3>
-        <i class="fa fa-heart-o heart-toggle mobile_hide" aria-hidden="true"></i>
-    </div>
+                        <div class="single_product_title d-flex justify-content-between">
+                            <h3>Cortex Magix Conical Implant</h3>
+                            <i class="fa fa-heart-o heart-toggle mobile_hide" aria-hidden="true"></i>
+                        </div>
 
-    <div class="single_product_total_prize">
-        <h3>4.704,00 TL</h3>
-    </div>
+                        <div class="single_product_total_prize">
+                            <h3>4.704,00 TL</h3>
+                        </div>
 
-    <div class="product_size">
-        <div class="cap_mm">
-            <p>Çap (mm)</p>
-        </div>
-        <div class="size-options">
-            <label class="size-box">
-                <input type="radio" name="size" value="3.3">
-                <span>3.3</span>
-            </label>
-            <label class="size-box">
-                <input type="radio" name="size" value="3.8">
-                <span>3.8</span>
-            </label>
-            <label class="size-box">
-                <input type="radio" name="size" value="4.2">
-                <span>4.2</span>
-            </label>
-        </div>
-        <div id="sizeError" class="error-text"></div>
+                        <div class="product_size">
+                            <div class="cap_mm">
+                                <p>Çap (mm)</p>
+                            </div>
+                            <div class="size-options">
+                                <label class="size-box">
+                                    <input type="radio" name="size" value="3.3">
+                                    <span>3.3</span>
+                                </label>
+                                <label class="size-box">
+                                    <input type="radio" name="size" value="3.8">
+                                    <span>3.8</span>
+                                </label>
+                                <label class="size-box">
+                                    <input type="radio" name="size" value="4.2">
+                                    <span>4.2</span>
+                                </label>
+                            </div>
+                            <div id="sizeError" class="error-text"></div>
 
-        <div class="boy_mm">
-            <p>Boy (mm)</p>
-        </div>
-        <div class="size-options">
-            <label class="size-box">
-                <input type="radio" name="size_boy" value="8">
-                <span>8</span>
-            </label>
-            <label class="size-box">
-                <input type="radio" name="size_boy" value="10">
-                <span>10</span>
-            </label>
-            <label class="size-box">
-                <input type="radio" name="size_boy" value="11.5">
-                <span>11.5</span>
-            </label>
-            <label class="size-box">
-                <input type="radio" name="size_boy" value="13">
-                <span>13</span>
-            </label>
-            <label class="size-box">
-                <input type="radio" name="size_boy" value="16">
-                <span>16</span>
-            </label>
-        </div>
-        <div id="sizeBoyError" class="error-text"></div>
+                            <div class="boy_mm">
+                                <p>Boy (mm)</p>
+                            </div>
+                            <div class="size-options">
+                                <label class="size-box">
+                                    <input type="radio" name="size_boy" value="8">
+                                    <span>8</span>
+                                </label>
+                                <label class="size-box">
+                                    <input type="radio" name="size_boy" value="10">
+                                    <span>10</span>
+                                </label>
+                                <label class="size-box">
+                                    <input type="radio" name="size_boy" value="11.5">
+                                    <span>11.5</span>
+                                </label>
+                                <label class="size-box">
+                                    <input type="radio" name="size_boy" value="13">
+                                    <span>13</span>
+                                </label>
+                                <label class="size-box">
+                                    <input type="radio" name="size_boy" value="16">
+                                    <span>16</span>
+                                </label>
+                            </div>
+                            <div id="sizeBoyError" class="error-text"></div>
 
-        <div class="enex-container text-start">
-            <div class="enex-info">
-                Menşei: CN <img src="https://flagcdn.com/w40/cn.png" alt="CN" class="enex-flag" /><br />
-                En Fazla Satış Adedi: 100<br />
-                Güncel Döviz Kuru: $ 39,20 TL / € 43,99 TL
-            </div>
+                            <div class="enex-container text-start">
+                                <div class="enex-info">
+                                    Menşei: CN <img src="https://flagcdn.com/w40/cn.png" alt="CN"
+                                        class="enex-flag" /><br />
+                                    En Fazla Satış Adedi: 100<br />
+                                    Güncel Döviz Kuru: $ 39,20 TL / € 43,99 TL
+                                </div>
 
-            <div class="enex-counter">
-                <button type="button" onclick="enexDecrease()">−</button>
-                <span id="enex-quantity">0</span>
-                <button type="button" onclick="enexIncrease()">+</button>
-            </div>
-            <div id="quantityError" class="error-text mb-3"></div>
+                                <div class="enex-counter">
+                                    <button type="button" onclick="enexDecrease()">−</button>
+                                    <span id="enex-quantity">0</span>
+                                    <button type="button" onclick="enexIncrease()">+</button>
+                                </div>
+                                <div id="quantityError" class="error-text mb-3"></div>
 
-            <button type="submit" class="enex-btn">Sepete Ekle</button>
-        </div>
-    </div>
-</form>
+                                <button type="submit" class="enex-btn">Sepete Ekle</button>
+                            </div>
+                        </div>
+                    </form>
 
-<style>
-    .error-text {
-        color: red;
-        font-size: 14px;
-        margin-top: 5px;
-    }
-</style>
+                    <style>
+                        .error-text {
+                            color: red;
+                            font-size: 14px;
+                            margin-top: 5px;
+                        }
+                    </style>
 
-<script>
-    let enexCount = 0;
-    const enexMaxCount = 100;
-    const enexQuantityDisplay = document.getElementById('enex-quantity');
+                    <script>
+                        let enexCount = 0;
+                        const enexMaxCount = 100;
+                        const enexQuantityDisplay = document.getElementById('enex-quantity');
 
-    function enexIncrease() {
-        if (enexCount < enexMaxCount) {
-            enexCount++;
-            enexQuantityDisplay.textContent = enexCount;
-        }
-    }
+                        function enexIncrease() {
+                            if (enexCount < enexMaxCount) {
+                                enexCount++;
+                                enexQuantityDisplay.textContent = enexCount;
+                            }
+                        }
 
-    function enexDecrease() {
-        if (enexCount > 0) {
-            enexCount--;
-            enexQuantityDisplay.textContent = enexCount;
-        }
-    }
+                        function enexDecrease() {
+                            if (enexCount > 0) {
+                                enexCount--;
+                                enexQuantityDisplay.textContent = enexCount;
+                            }
+                        }
 
-    function validateForm() {
-        let isValid = true;
+                        function validateForm() {
+                            let isValid = true;
 
-        const sizeSelected = document.querySelector('input[name="size"]:checked');
-        const sizeBoySelected = document.querySelector('input[name="size_boy"]:checked');
-        const sizeError = document.getElementById('sizeError');
-        const sizeBoyError = document.getElementById('sizeBoyError');
-        const quantityError = document.getElementById('quantityError');
+                            const sizeSelected = document.querySelector('input[name="size"]:checked');
+                            const sizeBoySelected = document.querySelector('input[name="size_boy"]:checked');
+                            const sizeError = document.getElementById('sizeError');
+                            const sizeBoyError = document.getElementById('sizeBoyError');
+                            const quantityError = document.getElementById('quantityError');
 
-        sizeError.textContent = '';
-        sizeBoyError.textContent = '';
-        quantityError.textContent = '';
+                            sizeError.textContent = '';
+                            sizeBoyError.textContent = '';
+                            quantityError.textContent = '';
 
-        if (!sizeSelected) {
-            sizeError.textContent = 'Lütfen bir çap (mm) seçin.';
-            isValid = false;
-        }
+                            if (!sizeSelected) {
+                                sizeError.textContent = 'Lütfen bir çap (mm) seçin.';
+                                isValid = false;
+                            }
 
-        if (!sizeBoySelected) {
-            sizeBoyError.textContent = 'Lütfen bir boy (mm) seçin.';
-            isValid = false;
-        }
+                            if (!sizeBoySelected) {
+                                sizeBoyError.textContent = 'Lütfen bir boy (mm) seçin.';
+                                isValid = false;
+                            }
 
-        if (enexCount === 0) {
-            quantityError.textContent = 'Lütfen adet sayısını artırın.';
-            isValid = false;
-        }
+                            if (enexCount === 0) {
+                                quantityError.textContent = 'Lütfen adet sayısını artırın.';
+                                isValid = false;
+                            }
 
-        return isValid;
-    }
-</script>
+                            return isValid;
+                        }
+                    </script>
 
                 </div>
             </div>
@@ -567,13 +568,13 @@
         </div>
     </footer>
 
-  <div class="bottom-nav">
-    <a href="index.html" class="active"><i class="fa fa-home"></i></a>
-    <a href="#"><i class="fa fa-search"></i></a>
-    <a href="#"><i class="fa fa-heart-o"></i></a>
-    <a href="#"><i class="fa fa-phone"></i></a>
-    <a href="cart.html"><i class="fa fa-shopping-cart"></i></a>
-  </div>
+    <div class="bottom-nav">
+        <a href="index.html" class="active"><i class="fa fa-home"></i></a>
+        <a href="#"><i class="fa fa-search"></i></a>
+        <a href="#"><i class="fa fa-heart-o"></i></a>
+        <a href="#"><i class="fa fa-phone"></i></a>
+        <a href="cart.html"><i class="fa fa-shopping-cart"></i></a>
+    </div>
     <!-- ========== Footer Area End Here ==========  -->
     <!-- ========== All Js Link Here ===== -->
     <script src="js/bootstrap.min.js"></script>
