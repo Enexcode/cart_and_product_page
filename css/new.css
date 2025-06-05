@@ -408,7 +408,7 @@
 
 .single_product_img .single_product_img_list img {
     height: 100%;
-    width: 100%;
+    width: 48%;
     object-fit: fill;
     margin: 0px 8px;
 }
@@ -1046,6 +1046,12 @@ strong {
 	font-size: 19px;
 	font-weight: 854;
 	margin-top: 46px;
+}
+.single_product_img .single_product_img_list img {
+	height: 100%;
+	width: 100%;
+	object-fit: fill;
+	margin: 0px 8px;
 }
 
 }
