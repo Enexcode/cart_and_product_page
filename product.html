@@ -182,91 +182,141 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="single_product_title d-flex justify-content-between">
-                        <h3>Cortex Magix Conical Implant</h3>
-                        <i class="fa fa-heart-o heart-toggle mobile_hide" aria-hidden="true"></i>
-                    </div>
-                    <div class="single_product_total_prize">
-                        <h3>4.704,00 TL</h3>
-                    </div>
-                    <div class="product_size">
-                        <div class="cap_mm">
-                            <p>Çap (mm)</p>
-                        </div>
-                        <div class="size-options">
-                            <label class="size-box">
-                                <input type="radio" name="size" value="8">
-                                <span>3.3</span>
-                            </label>
-                            <label class="size-box">
-                                <input type="radio" name="size" value="10">
-                                <span>3.8</span>
-                            </label>
-                            <label class="size-box">
-                                <input type="radio" name="size" value="11.5">
-                                <span>4.2</span>
-                            </label>
-                        </div>
-                        <div class="boy_mm">
-                            <p>Boy (mm)</p>
-                        </div>
-                        <div class="size-options">
-                            <label class="size-box">
-                                <input type="radio" name="size_boy" value="8">
-                                <span>8</span>
-                            </label>
-                            <label class="size-box">
-                                <input type="radio" name="size_boy" value="10">
-                                <span>10</span>
-                            </label>
-                            <label class="size-box">
-                                <input type="radio" name="size_boy" value="11.5">
-                                <span>11.5</span>
-                            </label>
-                            <label class="size-box">
-                                <input type="radio" name="size_boy" value="11.5">
-                                <span>13</span>
-                            </label>
-                            <label class="size-box">
-                                <input type="radio" name="size_boy" value="11.5">
-                                <span>16</span>
-                            </label>
-                        </div>
-                        <div class="enex-container text-start">
-                            <div class="enex-info">
-                                Menşei: CN <img src="https://flagcdn.com/w40/cn.png" alt="CN" class="enex-flag" /><br />
-                                En Fazla Satış Adedi: 100<br />
-                                Güncel Döviz Kuru: $ 39,20 TL / € 43,99 TL
-                            </div>
+                    <form id="productForm" action="#" method="post" onsubmit="return validateForm()">
+    <div class="single_product_title d-flex justify-content-between">
+        <h3>Cortex Magix Conical Implant</h3>
+        <i class="fa fa-heart-o heart-toggle mobile_hide" aria-hidden="true"></i>
+    </div>
 
-                            <div class="enex-counter">
-                                <button onclick="enexDecrease()">−</button>
-                                <span id="enex-quantity">0</span>
-                                <button onclick="enexIncrease()">+</button>
-                            </div>
-                            <script>
-                                let enexCount = 0;
-                                const enexMaxCount = 100;
-                                const enexQuantityDisplay = document.getElementById('enex-quantity');
+    <div class="single_product_total_prize">
+        <h3>4.704,00 TL</h3>
+    </div>
 
-                                function enexIncrease() {
-                                    if (enexCount < enexMaxCount) {
-                                        enexCount++;
-                                        enexQuantityDisplay.textContent = enexCount;
-                                    }
-                                }
+    <div class="product_size">
+        <div class="cap_mm">
+            <p>Çap (mm)</p>
+        </div>
+        <div class="size-options">
+            <label class="size-box">
+                <input type="radio" name="size" value="3.3">
+                <span>3.3</span>
+            </label>
+            <label class="size-box">
+                <input type="radio" name="size" value="3.8">
+                <span>3.8</span>
+            </label>
+            <label class="size-box">
+                <input type="radio" name="size" value="4.2">
+                <span>4.2</span>
+            </label>
+        </div>
+        <div id="sizeError" class="error-text"></div>
 
-                                function enexDecrease() {
-                                    if (enexCount > 0) {
-                                        enexCount--;
-                                        enexQuantityDisplay.textContent = enexCount;
-                                    }
-                                }
-                            </script>
+        <div class="boy_mm">
+            <p>Boy (mm)</p>
+        </div>
+        <div class="size-options">
+            <label class="size-box">
+                <input type="radio" name="size_boy" value="8">
+                <span>8</span>
+            </label>
+            <label class="size-box">
+                <input type="radio" name="size_boy" value="10">
+                <span>10</span>
+            </label>
+            <label class="size-box">
+                <input type="radio" name="size_boy" value="11.5">
+                <span>11.5</span>
+            </label>
+            <label class="size-box">
+                <input type="radio" name="size_boy" value="13">
+                <span>13</span>
+            </label>
+            <label class="size-box">
+                <input type="radio" name="size_boy" value="16">
+                <span>16</span>
+            </label>
+        </div>
+        <div id="sizeBoyError" class="error-text"></div>
 
-                            <button class="enex-btn">Sepete Ekle</button>
-                        </div>
-                    </div>
+        <div class="enex-container text-start">
+            <div class="enex-info">
+                Menşei: CN <img src="https://flagcdn.com/w40/cn.png" alt="CN" class="enex-flag" /><br />
+                En Fazla Satış Adedi: 100<br />
+                Güncel Döviz Kuru: $ 39,20 TL / € 43,99 TL
+            </div>
+
+            <div class="enex-counter">
+                <button type="button" onclick="enexDecrease()">−</button>
+                <span id="enex-quantity">0</span>
+                <button type="button" onclick="enexIncrease()">+</button>
+            </div>
+            <div id="quantityError" class="error-text mb-3"></div>
+
+            <button type="submit" class="enex-btn">Sepete Ekle</button>
+        </div>
+    </div>
+</form>
+
+<style>
+    .error-text {
+        color: red;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+</style>
+
+<script>
+    let enexCount = 0;
+    const enexMaxCount = 100;
+    const enexQuantityDisplay = document.getElementById('enex-quantity');
+
+    function enexIncrease() {
+        if (enexCount < enexMaxCount) {
+            enexCount++;
+            enexQuantityDisplay.textContent = enexCount;
+        }
+    }
+
+    function enexDecrease() {
+        if (enexCount > 0) {
+            enexCount--;
+            enexQuantityDisplay.textContent = enexCount;
+        }
+    }
+
+    function validateForm() {
+        let isValid = true;
+
+        const sizeSelected = document.querySelector('input[name="size"]:checked');
+        const sizeBoySelected = document.querySelector('input[name="size_boy"]:checked');
+        const sizeError = document.getElementById('sizeError');
+        const sizeBoyError = document.getElementById('sizeBoyError');
+        const quantityError = document.getElementById('quantityError');
+
+        sizeError.textContent = '';
+        sizeBoyError.textContent = '';
+        quantityError.textContent = '';
+
+        if (!sizeSelected) {
+            sizeError.textContent = 'Lütfen bir çap (mm) seçin.';
+            isValid = false;
+        }
+
+        if (!sizeBoySelected) {
+            sizeBoyError.textContent = 'Lütfen bir boy (mm) seçin.';
+            isValid = false;
+        }
+
+        if (enexCount === 0) {
+            quantityError.textContent = 'Lütfen adet sayısını artırın.';
+            isValid = false;
+        }
+
+        return isValid;
+    }
+</script>
+
                 </div>
             </div>
             <div class="row">
@@ -338,40 +388,40 @@
             <div class="row">
                 <div class="col-lg-8">
                     <div class="products_scroll_wrapper">
-                <div class="row pe-3">
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <div class="products_card position-relative me-0">
-                                <img src="images/products/products_one.png" alt="products">
-                                <h3 class="products_name">WOODPECKER</h3>
-                                <p class="mb-0">Q7 Plasma Air Purifier</p>
-                                <p class="mb-2">&nbsp;</p>
-                                <a href="#">Giriş Yap</a>
-                                <p class="status_product green_color">Kampanya</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="products_card position-relative">
-                                <img src="images/products/product_two.png" alt="products">
-                                <h3 class="products_name">W&amp;H</h3>
-                                <p class="mb-0">Synea Fusion Tg-97</p>
-                                <p class="mb-2">Seramik Rulmanlı Aeratör (Işıksız)</p>
-                                <a href="#">Giriş Yap</a>
-                                <p class="status_product red_color">Outlet</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="products_card position-relative">
-                                <img src="images/products/product_three.png" alt="products">
-                                <h3 class="products_name">KULZER</h3>
-                                <p class="mb-0">Variotime Dynamix Putty (2x380 ml)</p>
-                                <p class="mb-2">&nbsp;</p>
-                                <a href="#">Giriş Yap</a>
+                        <div class="row pe-3">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="products_card position-relative me-0">
+                                        <img src="images/products/products_one.png" alt="products">
+                                        <h3 class="products_name">WOODPECKER</h3>
+                                        <p class="mb-0">Q7 Plasma Air Purifier</p>
+                                        <p class="mb-2">&nbsp;</p>
+                                        <a href="#">Giriş Yap</a>
+                                        <p class="status_product green_color">Kampanya</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="products_card position-relative">
+                                        <img src="images/products/product_two.png" alt="products">
+                                        <h3 class="products_name">W&amp;H</h3>
+                                        <p class="mb-0">Synea Fusion Tg-97</p>
+                                        <p class="mb-2">Seramik Rulmanlı Aeratör (Işıksız)</p>
+                                        <a href="#">Giriş Yap</a>
+                                        <p class="status_product red_color">Outlet</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="products_card position-relative">
+                                        <img src="images/products/product_three.png" alt="products">
+                                        <h3 class="products_name">KULZER</h3>
+                                        <p class="mb-0">Variotime Dynamix Putty (2x380 ml)</p>
+                                        <p class="mb-2">&nbsp;</p>
+                                        <a href="#">Giriş Yap</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-              </div>
                 </div>
             </div>
         </div>
@@ -407,9 +457,8 @@
         });
     </script>
 
- <!-- ====== Popups (Only once in page) ====== -->
-    <div id="confirmRemoveFavorite"
-        style="display:none;">
+    <!-- ====== Popups (Only once in page) ====== -->
+    <div id="confirmRemoveFavorite" style="display:none;">
         <div class="popup-card text-center">
             <div class="d-flex ps-4 pe-4 pt-3">
                 <div class="popup-icon">

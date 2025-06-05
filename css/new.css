@@ -668,7 +668,7 @@
     background-color: #F7F7F7;
     border-radius: 10px;
     padding: 10px 0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     width: 200px;
 }
 
@@ -1019,6 +1019,33 @@ strong {
 }
 .enex-btn {
 	margin-top: 20px;
+}
+.product_description {
+	background-color: transparent;
+	padding: 0px;
+}
+.accordion-item {
+	border-top: 1px solid #00000041;
+	border-bottom: 1px solid #00000041;
+	border-left: none;
+	border-right: none;
+	margin-bottom: 0px;
+    background-color: transparent;
+    border-radius: 0px !important;
+    
+}
+.accordion-title {
+	background-color: transparent;
+	padding: 15px;
+	padding-left: 5px;
+    border-radius: 0px !important;
+}
+.single_more_product h3 {
+	font-size: 22px;
+	color: #000000;
+	font-size: 19px;
+	font-weight: 854;
+	margin-top: 46px;
 }
 
 }
