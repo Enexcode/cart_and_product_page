@@ -748,10 +748,11 @@
 }
 
 .product_description .accordion {
-    color: #000000;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 21px;
+	color: #000000;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 21px;
+	display: none;
 }
 
 .tab-button.active {
@@ -885,7 +886,73 @@ strong {
     display: none;
 }
 
+.video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 oran */
+      padding-top: 25px;
+      height: 0;
+    }
 
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+.element {
+	max-width: 1000%;
+	max-height: 100%;
+	border: 1px solid #000;
+	border-radius: 0px;
+	background: #fff;
+}
+
+/* Hide default checkbox */
+.custom-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+
+/* Custom checkbox box */
+.custom-checkbox .checkmark {
+	width: 20px;
+	height: 20px;
+	border: .2px solid #1f1f1f;
+	border-radius: 4px;
+	display: inline-block;
+	position: relative;
+	transition: all 0.3s ease;
+	margin-left: 20px;
+	background: #ffffff;
+}
+
+/* Check icon (tick) */
+.custom-checkbox .checkmark::after {
+	content: '';
+	position: absolute;
+	left: 6px;
+	top: 2px;
+	width: 6px;
+	height: 11px;
+	border: solid white;
+	border-width: 0 2px 2px 0;
+	transform: rotate(45deg);
+	opacity: 0;
+	transition: opacity 0.2s;
+}
+
+/* Checked state */
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+  background-color: #9EBD54;
+  border-color: #9EBD54;
+}
+
+/* Show tick when checked */
+.custom-checkbox input[type="checkbox"]:checked + .checkmark::after {
+  opacity: 1;
+}
 /* ========== 250px to 575.98px  */
 @media (min-width: 250px) and (max-width: 767.98px) {
     .cart_card_items .counter-box {
@@ -1055,6 +1122,13 @@ strong {
 	width: 100%;
 	object-fit: fill;
 	margin: 0px 8px;
+}
+.product_description .accordion {
+	color: #000000;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 21px;
+	display: unset;
 }
 
 }

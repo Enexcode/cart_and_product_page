@@ -253,7 +253,4 @@ customPopup.addEventListener('click', e => {
 });
 
 
-
-
-  
   
