@@ -597,13 +597,19 @@ a{
     background-color: #9EBD54;
 }
 .products_scroll_wrapper {
-	-webkit-overflow-scrolling: touch;
-	scrollbar-width: none;
-	overflow-x: hidden;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 10px;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
 }
+
 .products_scroll_wrapper::-webkit-scrollbar {
-  display: none;
+    display: none; /* Chrome, Safari, Opera */
 }
+
 
 /* ========== Categories, Brand, products  Css Here End ==========  */
 
